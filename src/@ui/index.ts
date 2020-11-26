@@ -1,3 +1,1 @@
-export const fn = () => {
-
-}
+export * from './atoms'
