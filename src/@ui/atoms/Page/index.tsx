@@ -1,8 +1,8 @@
 import React, { FC, memo } from 'react'
 import './styles.css'
 
-export const Panel: FC = memo(({ children }) => (
-    <div className='panel'>
+export const Page: FC = memo(({ children }) => (
+    <div className='page'>
         {children}
     </div>
 ))

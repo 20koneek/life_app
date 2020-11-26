@@ -1,0 +1,24 @@
+.typography {
+    font-family: Roboto, serif;
+    font-style: normal;
+    /*font-weight: 500;*/
+    /*font-size: 20px;*/
+    /*line-height: 28px;*/
+    /*letter-spacing: 0.0015em;*/
+
+    color: #000;
+}
+
+.typography.medium {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.typography.large {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.typography.negative {
+    color: #FFF;
+}

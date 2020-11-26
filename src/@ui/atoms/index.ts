@@ -1,2 +1,7 @@
+export { Avatar } from './Avatar'
 export { Button } from './Button'
+export { Column } from './Column'
+export { Content } from './Content'
+export { Page } from './Page'
 export { Panel } from './Panel'
+export { Typography } from './Typography'
