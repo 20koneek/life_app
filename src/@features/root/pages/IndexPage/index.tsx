@@ -1,23 +1,31 @@
 import React, { FC } from 'react'
-import { Button, Card, Column, Content, Page } from '../../../../@ui'
+import { Card, Column, Bottom, Header, Skeleton, Scroll, Limiter } from '../../../../@ui'
 
 export const IndexPage: FC = () => (
-    <Page>
-        <Content>
-            <Column>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Button/>
-            </Column>
-        </Content>
-    </Page>
+    <Skeleton>
+        <Header/>
+        <Scroll>
+            <Limiter>
+                <Column>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                </Column>
+            </Limiter>
+        </Scroll>
+        <Bottom/>
+    </Skeleton>
 )

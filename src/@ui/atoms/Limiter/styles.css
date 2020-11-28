@@ -1,0 +1,11 @@
+.limiter {
+    display: grid;
+    grid-template:
+    ". limiter ." 1fr
+    / auto minmax(auto, 600px) auto;
+    grid-gap: 16px;
+}
+
+.limiter-area {
+    grid-area: limiter;
+}

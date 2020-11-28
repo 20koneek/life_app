@@ -1,0 +1,8 @@
+.scroll {
+    display: grid;
+    overflow-x: auto;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}

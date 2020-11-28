@@ -1,0 +1,6 @@
+.skeleton {
+    display: grid;
+    grid-auto-rows:  auto 1fr auto;
+    height: 100%;
+    width: 100%;
+}

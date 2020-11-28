@@ -1,8 +1,8 @@
 import React, { FC, memo } from 'react'
 import './styles.css'
 
-export const Content: FC = memo(({ children }) => (
-    <div className='content'>
+export const Scroll: FC = memo(({ children }) => (
+    <div className='scroll'>
         {children}
     </div>
 ))
