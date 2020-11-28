@@ -1,0 +1,13 @@
+.card {
+    display: grid;
+    grid-template:
+    "avatar ." auto
+    "avatar ." auto
+    / auto 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 12px;
+}
+
+.avatar-area {
+    grid-area: avatar;
+}

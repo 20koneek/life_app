@@ -1,15 +1,21 @@
 import React, { FC } from 'react'
-import { Avatar, Button, Column, Content, Page, Panel, Typography } from '../../../../@ui'
+import { Button, Card, Column, Content, Page } from '../../../../@ui'
 
 export const IndexPage: FC = () => (
     <Page>
         <Content>
             <Column>
-                <Panel>
-                    <Avatar kind='die'/>
-                </Panel>
-                <Typography>Test 1</Typography>
-                <Typography size='large' negative>Test 1</Typography>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
                 <Button/>
             </Column>
         </Content>

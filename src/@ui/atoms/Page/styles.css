@@ -2,5 +2,14 @@
     width: 100%;
     height: 100%;
     display: grid;
-    justify-items: center;
+    grid-template:
+    ". . ." auto
+    ". content ." 1fr
+    ". . ." auto
+    / auto minmax(auto, 600px) auto;
+    grid-gap: 16px;
+}
+
+.content-area {
+    grid-area: content;
 }
