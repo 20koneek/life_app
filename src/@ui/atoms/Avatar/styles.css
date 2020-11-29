@@ -6,18 +6,18 @@
     text-align: center;
 }
 
-.avatar.die {
+.avatar.dead {
     background: linear-gradient(180deg, #0D658A 0%, #B0FFB4 100%);
 }
 
-.avatar.dead {
+.avatar.death {
     background: linear-gradient(180deg, #310050 0%, #000000 100%);
 }
 
-.avatar.life {
+.avatar.alive {
     background: linear-gradient(180deg, #FFB800 0%, #FFF7B0 100%);
 }
 
-.avatar.alive {
+.avatar.life {
     background: linear-gradient(180deg, #AD00FF 0%, #FFB0E9 100%);
 }

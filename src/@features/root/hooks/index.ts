@@ -1,0 +1,1 @@
+export { useLifeStore } from './useLifeStore'

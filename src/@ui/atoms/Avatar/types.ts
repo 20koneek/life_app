@@ -1,4 +1,4 @@
 export interface Props {
-    kind: 'die' | 'dead' | 'life' | 'alive'
+    kind: 'death' | 'dead' | 'life' | 'alive'
     className?: string
 }

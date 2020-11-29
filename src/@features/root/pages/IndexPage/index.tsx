@@ -1,17 +1,27 @@
-import React, { FC } from 'react'
+import React, { FC, useMemo } from 'react'
 import { LifeApp } from '../../../../@ui'
+import { BodyProps } from '../../../../@ui/organisms/Body'
+import { BottomProps } from '../../../../@ui/molecules/Bottom'
+import { HeaderProps } from '../../../../@ui/molecules/Header'
+import { useLifeStore } from '../../hooks'
 
 export const IndexPage: FC = () => {
+    const [store, action] = useLifeStore()
+
+    const header = useMemo<HeaderProps>(() => ({ title: 'Клеточное наполнение' }), [])
+    const body = useMemo<BodyProps>(() => ({ cards: store.cards }), [store.cards])
+    const bottom = useMemo<BottomProps>(() => ({
+        button: {
+            name: 'Сотворить',
+            onClick: action,
+        },
+    }), [action])
+
     return (
         <LifeApp
-            body={{ cards: [] }}
-            header={{ title: 'Клеточное наполнение' }}
-            bottom={{
-                button: {
-                    name: 'Сотворить',
-                    onClick: () => console.log(1),
-                },
-            }}
+            header={header}
+            body={body}
+            bottom={bottom}
         />
     )
 }
