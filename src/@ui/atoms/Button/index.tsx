@@ -1,11 +1,17 @@
 import React, { FC, memo } from 'react'
+import { Props } from './types'
 import './styles.css'
 
-export const Button: FC = memo(() => (
+export const Button: FC<Props> = memo<Props>(({
+    name,
+    onClick,
+}) => (
     <button
         className='button'
-        onClick={() => console.log(1)}
+        onClick={onClick}
     >
-        Button
+        {name}
     </button>
 ))
+
+export type ButtonProps = Props

@@ -1,1 +1,3 @@
-export const e = 2
+export interface Props {
+    title: string
+}

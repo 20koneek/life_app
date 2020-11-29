@@ -10,3 +10,5 @@ export const Avatar: FC<Props> = memo<Props>(({ kind, className }) => (
         {kind === 'alive' && '🐣'}
     </div>
 ))
+
+export type AvatarProps = Props

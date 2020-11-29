@@ -1,1 +1,4 @@
-export const e = 2
+export interface Props {
+    name: string
+    onClick: VoidFunction
+}

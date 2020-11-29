@@ -1,1 +1,5 @@
-export const e = 2
+import { ButtonProps } from '../../atoms/Button/index'
+
+export interface Props {
+    button: ButtonProps
+}
